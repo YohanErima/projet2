@@ -34,6 +34,7 @@ class GameScene: SKScene {
             ground.anchorPoint = CGPoint(x: 0.5, y: 0.5 )
             ground.position = CGPoint(x: CGFloat(i) * ground.size.width, y: -(self.frame.size.height / 1.5))
             
+            
             self.addChild(ground)
         }
     }
