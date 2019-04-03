@@ -36,6 +36,8 @@ class GameScene: SKScene {
             
             
             self.addChild(ground)
+            
+            
         }
     }
     func moveGrounds() {

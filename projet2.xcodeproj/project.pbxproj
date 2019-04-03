@@ -17,6 +17,9 @@
 		EC9EDEF422531AD20021C7F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC9EDEF222531AD20021C7F1 /* LaunchScreen.storyboard */; };
 		EC9EDEFF22531AD20021C7F1 /* projet2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9EDEFE22531AD20021C7F1 /* projet2Tests.swift */; };
 		EC9EDF0A22531AD20021C7F1 /* projet2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9EDF0922531AD20021C7F1 /* projet2UITests.swift */; };
+		EC9FCF2422547C97002B3C34 /* AcceuilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9FCF2322547C97002B3C34 /* AcceuilViewController.swift */; };
+		EC9FCF2622547EB8002B3C34 /* ChoixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9FCF2522547EB8002B3C34 /* ChoixViewController.swift */; };
+		EC9FCF2822548ADA002B3C34 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9FCF2722548ADA002B3C34 /* ScoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		EC9EDF0522531AD20021C7F1 /* projet2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = projet2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9EDF0922531AD20021C7F1 /* projet2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projet2UITests.swift; sourceTree = "<group>"; };
 		EC9EDF0B22531AD20021C7F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC9FCF2322547C97002B3C34 /* AcceuilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceuilViewController.swift; sourceTree = "<group>"; };
+		EC9FCF2522547EB8002B3C34 /* ChoixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoixViewController.swift; sourceTree = "<group>"; };
+		EC9FCF2722548ADA002B3C34 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,9 @@
 				EC9EDEF022531AD20021C7F1 /* Assets.xcassets */,
 				EC9EDEF222531AD20021C7F1 /* LaunchScreen.storyboard */,
 				EC9EDEF522531AD20021C7F1 /* Info.plist */,
+				EC9FCF2322547C97002B3C34 /* AcceuilViewController.swift */,
+				EC9FCF2522547EB8002B3C34 /* ChoixViewController.swift */,
+				EC9FCF2722548ADA002B3C34 /* ScoreViewController.swift */,
 			);
 			path = projet2;
 			sourceTree = "<group>";
@@ -271,8 +280,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC9EDEEA22531AD20021C7F1 /* GameScene.swift in Sources */,
+				EC9FCF2622547EB8002B3C34 /* ChoixViewController.swift in Sources */,
 				EC9EDEEC22531AD20021C7F1 /* GameViewController.swift in Sources */,
 				EC9EDEE422531AD20021C7F1 /* AppDelegate.swift in Sources */,
+				EC9FCF2422547C97002B3C34 /* AcceuilViewController.swift in Sources */,
+				EC9FCF2822548ADA002B3C34 /* ScoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
