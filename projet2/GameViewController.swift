@@ -9,13 +9,16 @@
 import UIKit
 import SpriteKit
 import GameplayKit
+import AVFoundation
 
 class GameViewController: UIViewController {
+    
+    var MusicFond:AVAudioPlayer = AVAudioPlayer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let view = self.view as! SKView? {
+        /*if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
             if let scene = SKScene(fileNamed: "GameScene") {
                 // Set the scale mode to scale to fit the window
@@ -29,7 +32,12 @@ class GameViewController: UIViewController {
             
             view.showsFPS = true
             view.showsNodeCount = true
-        }
+        }*/
+    }
+    override func viewWillLayoutSubviews() {
+        
+        var bgMuiscURL:URL = Bundle.main.url(forResource: "soundName", withExtension: "mp3")!
+        
     }
 
     override var shouldAutorotate: Bool {
