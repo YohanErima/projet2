@@ -21,10 +21,17 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     override init(size:CGSize){
         super.init(size: size)
-        self.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
-        player = SKSpriteNode(imageNamed : "cube")
+        let screenWidth:CGFloat  = UIScreen.main.bounds.width
+        let screenHeight:CGFloat = UIScreen.main.bounds.height
         
-        player.position = CGPoint(x: self.frame.size.width, y: player.size.height/2 + 20)
+        let background = SKSpriteNode(imageNamed: "background")
+        background.position = CGPoint(x: size.width/2, y: size.height/2)
+        background.zPosition=0
+        addChild(background)
+        
+        player = SKSpriteNode(imageNamed : "paul")
+        player.zPosition=1
+        player.position = CGPoint(x: player.size.width/2, y: player.size.height/2 + 65 )
         
         self.addChild(player)
         
@@ -48,4 +55,31 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         // Called before each frame is rendered
        
     }
+    func moveDown(){
+        let moveAction:SKAction = SKAction.moveBy(x: 0, y: -100, duration: 1)
+        player.run(moveAction)
+    }
+    func touchDown(atPoint pos : CGPoint) {
+        if ( pos.y > 0 ){
+            
+        }else {
+            moveDown()
+        }    }
+    func touchMoved(atPoint pos : CGPoint) {
+        
+    }
+    func touchUp(atPoint pos : CGPoint) {
+        
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        for t in touches {
+            self.touchDown(atPoint: t.location(in: self))
+            
+            break
+        }
+    }
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+    }
+    
 }

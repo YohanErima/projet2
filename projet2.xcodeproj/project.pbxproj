@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EC17A4E02257214E00CD54DB /* gamra.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EC17A4DF2257214E00CD54DB /* gamra.mp3 */; };
 		EC9EDEE422531AD20021C7F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9EDEE322531AD20021C7F1 /* AppDelegate.swift */; };
 		EC9EDEE622531AD20021C7F1 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = EC9EDEE522531AD20021C7F1 /* GameScene.sks */; };
 		EC9EDEE822531AD20021C7F1 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = EC9EDEE722531AD20021C7F1 /* Actions.sks */; };
@@ -21,6 +20,7 @@
 		EC9FCF2422547C97002B3C34 /* AcceuilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9FCF2322547C97002B3C34 /* AcceuilViewController.swift */; };
 		EC9FCF2622547EB8002B3C34 /* ChoixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9FCF2522547EB8002B3C34 /* ChoixViewController.swift */; };
 		EC9FCF2822548ADA002B3C34 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9FCF2722548ADA002B3C34 /* ScoreViewController.swift */; };
+		ECC106AB225B56AD004DA161 /* gamra.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ECC106AA225B56AD004DA161 /* gamra.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EC17A4DF2257214E00CD54DB /* gamra.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gamra.mp3; sourceTree = "<group>"; };
 		EC9EDEE022531AD20021C7F1 /* projet2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = projet2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9EDEE322531AD20021C7F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC9EDEE522531AD20021C7F1 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -61,6 +60,7 @@
 		EC9FCF2322547C97002B3C34 /* AcceuilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceuilViewController.swift; sourceTree = "<group>"; };
 		EC9FCF2522547EB8002B3C34 /* ChoixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoixViewController.swift; sourceTree = "<group>"; };
 		EC9FCF2722548ADA002B3C34 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		ECC106AA225B56AD004DA161 /* gamra.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gamra.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,14 +88,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EC17A4DE2257211A00CD54DB /* sounds */ = {
-			isa = PBXGroup;
-			children = (
-				EC17A4DF2257214E00CD54DB /* gamra.mp3 */,
-			);
-			path = sounds;
-			sourceTree = "<group>";
-		};
 		EC9EDED722531AD20021C7F1 = {
 			isa = PBXGroup;
 			children = (
@@ -124,7 +116,8 @@
 				EC9EDEE722531AD20021C7F1 /* Actions.sks */,
 				EC9EDEE922531AD20021C7F1 /* GameScene.swift */,
 				EC9EDEEB22531AD20021C7F1 /* GameViewController.swift */,
-				EC17A4DE2257211A00CD54DB /* sounds */,
+				ECC106A9225B56A0004DA161 /* sounds */,
+				ECDBD7D3225B502400606902 /* sprite.atlas */,
 				EC9EDEED22531AD20021C7F1 /* Main.storyboard */,
 				EC9EDEF022531AD20021C7F1 /* Assets.xcassets */,
 				EC9EDEF222531AD20021C7F1 /* LaunchScreen.storyboard */,
@@ -152,6 +145,21 @@
 				EC9EDF0B22531AD20021C7F1 /* Info.plist */,
 			);
 			path = projet2UITests;
+			sourceTree = "<group>";
+		};
+		ECC106A9225B56A0004DA161 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				ECC106AA225B56AD004DA161 /* gamra.mp3 */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+		ECDBD7D3225B502400606902 /* sprite.atlas */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = sprite.atlas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC9EDEEF22531AD20021C7F1 /* Main.storyboard in Resources */,
-				EC17A4E02257214E00CD54DB /* gamra.mp3 in Resources */,
+				ECC106AB225B56AD004DA161 /* gamra.mp3 in Resources */,
 				EC9EDEE622531AD20021C7F1 /* GameScene.sks in Resources */,
 				EC9EDEF122531AD20021C7F1 /* Assets.xcassets in Resources */,
 				EC9EDEF422531AD20021C7F1 /* LaunchScreen.storyboard in Resources */,
