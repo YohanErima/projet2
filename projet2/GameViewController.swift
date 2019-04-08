@@ -13,32 +13,51 @@ import AVFoundation
 
 class GameViewController: UIViewController {
     
-    var MusicFond:AVAudioPlayer = AVAudioPlayer()
-
+    var backgroundPlayer:AVAudioPlayer = AVAudioPlayer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         /*if let view = self.view as! SKView? {
-            // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "GameScene") {
-                // Set the scale mode to scale to fit the window
-                scene.scaleMode = .aspectFill
-                
-                // Present the scene
-                view.presentScene(scene)
-            }
-            
-            view.ignoresSiblingOrder = true
-            
-            view.showsFPS = true
-            view.showsNodeCount = true
-        }*/
+         // Load the SKScene from 'GameScene.sks'
+         if let scene = SKScene(fileNamed: "GameScene") {
+         // Set the scale mode to scale to fit the window
+         scene.scaleMode = .aspectFill
+         
+         // Present the scene
+         view.presentScene(scene)
+         }
+         
+         view.ignoresSiblingOrder = true
+         
+         view.showsFPS = true
+         view.showsNodeCount = true
+         }*/
+        
     }
+    
+    
     override func viewWillLayoutSubviews() {
         
-        var bgMuiscURL:URL = Bundle.main.url(forResource: "soundName", withExtension: "mp3")!
+        let audioFileURL = Bundle.main.path(forResource: "gamra", ofType:"mp3")
+        do {
+            backgroundPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioFileURL!))
+            
+        }
+        catch{
+            print(error)
+        }
+        backgroundPlayer.play()
+        let skView:SKView = self.view as! SKView
+        skView.showsFPS = true
+        skView.showsNodeCount = true
+        let scene:SKScene = GameScene.init(size: skView.bounds.size)
+        scene.scaleMode = SKSceneScaleMode.aspectFill
+        skView.presentScene(scene)
         
     }
+    
+        
+    
 
     override var shouldAutorotate: Bool {
         return true
